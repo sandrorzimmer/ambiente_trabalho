@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="SrZ">
+        <meta name="description" content="Descrição de ambiente de trabalho">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="_css/styles.css">
+
+        <script src="_js/script.js"></script>
+
+        <title>Ambiente de trabalho</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 class="pt-2 pb-2">Ambiente de trabalho</h2>
+        </div>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label for="tipo" class="col-sm-2 col-form-label font-weight-bold">Tipo</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" id="tipo">
+                            <option value="uma sala">sala</option>
+                            <option value="uma sala comercial">sala comercial</option>
+                            <option value="um pavilhão">pavilhão</option>
+                            <option value="um predio">prédio</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="area" class="col-sm-2 col-form-label font-weight-bold">Área</label>
+                    <div class="col-sm-5">
+                        <input type="number" class="form-control" id="area" value="20">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="pe_direito" class="col-sm-2 col-form-label font-weight-bold">Pé direito</label>
+                    <div class="col-sm-5">
+                        <input type="number" class="form-control" id="pe_direito" value="3">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="piso" class="col-sm-2 col-form-label font-weight-bold">Piso</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" id="piso">
+                            <option value="revestimento cerâmico">revestimento cerâmico</option>
+                            <option value="madeira">madeira</option>
+                            <option value="cimento">cimento</option>
+                            <option value="cimento alisado">cimento alisado</option>
+                            <option value="metal">metal</option>
+                            <option value="chao_batido">chão batido</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="parede" class="col-sm-2 col-form-label font-weight-bold">Parede</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" id="parede">
+                            <option value="alvenaria">alvenaria</option>
+                            <option value="revestimento cerâmico">revestimento cerâmico</option>
+                            <option value="madeira">madeira</option>
+                            <option value="metal">metal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="teto" class="col-sm-2 col-form-label font-weight-bold">Teto</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" id="teto">
+                            <option value="alvenaria">alvenaria</option>
+                            <option value="madeira">madeira</option>
+                            <option value="PVC">PVC</option>
+                            <option value="metal">metal</option>
+                            <option value="fibrocimento">fibrocimento</option>
+                            <option value="aluzinco">aluzinco</option>
+                            <option value="telhas de barro">telhas de barro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2 font-weight-bold">Ventilação natural</div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input class="form-check-input ventilacao_natural_" type="checkbox" id="ventilacao_natural_0" value="portas" checked="true">
+                            <label class="form-check-label" for="ventilacao_natural_0">portas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ventilacao_natural_" type="checkbox" id="ventilacao_natural_1" value="janelas" checked="true">
+                            <label class="form-check-label" for="ventilacao_natural_1">janelas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ventilacao_natural_" type="checkbox" id="ventilacao_natural_2" value="tijolos vazados">
+                            <label class="form-check-label" for="ventilacao_natural_2">tijolos vazados</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ventilacao_natural_" type="checkbox" id="ventilacao_natural_3" value="portão">
+                            <label class="form-check-label" for="ventilacao_natural_3">portão</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2 font-weight-bold">Ventilação artifical</div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input class="form-check-input ventilacao_artificial_" type="checkbox" id="ventilacao_artificial_0" value="condicionador de ar" checked="true">
+                            <label class="form-check-label" for="ventilacao_artificial_0">condicionador de ar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ventilacao_artificial_" type="checkbox" id="ventilacao_artificial_1" value="ventilador">
+                            <label class="form-check-label" for="ventilacao_artificial_1">ventilador</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ventilacao_artificial_" type="checkbox" id="ventilacao_artificial_2" value="exaustor de ar">
+                            <label class="form-check-label" for="ventilacao_artificial_2">exaustor de ar</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2 font-weight-bold">Iluminação natural</div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input class="form-check-input iluminacao_natural_" type="checkbox" id="iluminacao_natural_0" value="portas" checked="true">
+                            <label class="form-check-label" for="iluminacao_natural_0">portas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input iluminacao_natural_" type="checkbox" id="iluminacao_natural_1" value="janelas" checked="true">
+                            <label class="form-check-label" for="iluminacao_natural_1">janelas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input iluminacao_natural_" type="checkbox" id="iluminacao_natural_2" value="vidros translúcidos">
+                            <label class="form-check-label" for="iluminacao_natural_2">vidros translúcidos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input iluminacao_natural_" type="checkbox" id="iluminacao_natural_3" value="tijolos vazados">
+                            <label class="form-check-label" for="iluminacao_natural_3">tijolos vazados</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input iluminacao_natural_" type="checkbox" id="iluminacao_natural_4" value="portão">
+                            <label class="form-check-label" for="iluminacao_natural_4">portão</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2 font-weight-bold">Iluminação artificial</div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input class="form-check-input iluminacao_artificial_" type="checkbox" id="iluminacao_artificial_0" value="lâmpadas fluorescentes" checked="true">
+                            <label class="form-check-label" for="iluminacao_artificial_0">lâmpadas fluorescentes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input iluminacao_artificial_" type="checkbox" id="iluminacao_artificial_1" value="lâmpadas LED">
+                            <label class="form-check-label" for="iluminacao_artificial_1">lâmpadas LED</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2 font-weight-bold">Mobiliário</div>
+                    <div class="col-sm-5">
+                        <div class="form-check">
+                            <input class="form-check-input mobiliario_" type="checkbox" id="mobiliario_0" value="mesa"  checked="true">
+                            <label class="form-check-label" for="mobiliario_0">mesa</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input mobiliario_" type="checkbox" id="mobiliario_1" value="cadeira" checked="true">
+                            <label class="form-check-label" for="mobiliario_1">cadeira</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input mobiliario_" type="checkbox" id="mobiliario_2" value="computador" checked="true">
+                            <label class="form-check-label" for="mobiliario_2">computador</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input mobiliario_" type="checkbox" id="mobiliario_3" value="impressora" checked="true">
+                            <label class="form-check-label" for="mobiliario_3">impressora</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input mobiliario_" type="checkbox" id="mobiliario_4" value="telefone" checked="true">
+                            <label class="form-check-label" for="mobiliario_4">telefone</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input mobiliario_" type="checkbox" id="mobiliario_5" value="materiais de uso comum em escritório" checked="true">
+                            <label class="form-check-label" for="mobiliario_5">materiais de uso comum em escritório</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="banheiros" class="col-sm-2 col-form-label font-weight-bold">Banheiros</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" id="banheiros">
+                            <option value="nenhum">nenhum</option>
+                            <option value="um">1</option>
+                            <option value="dois">2</option>
+                            <option value="três">3</option>
+                            <option value="quatro">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="button" class="btn btn-primary" onclick="generateText()">Gerar texto</button>
+                        <button type="button" class="btn btn-success" onclick="copyText()">Copiar texto</button>
+                        <button type="button" class="btn btn-warning" onclick="clearText()">Limpar texto</button>
+                        <a href="home.html">
+                            <button type="button" class="btn btn-danger">Reiniciar</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+            <div class="container">
+                <div class="alert alert-success text-center" role="alert" id="alerta_texto_copiado">
+                    Texto copiado com sucesso!
+                </div>
+                <div class="form-group">
+                    <h5>Ambiente de trabalho</h5>
+                    <textarea class="form-control" id="texto" rows="8"></textarea>
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>

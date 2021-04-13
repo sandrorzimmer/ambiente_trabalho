@@ -1,0 +1,11 @@
+.alert {
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    z-index: 9999;
+    font-weight: 700;
+    font-size: 130%;
+}
